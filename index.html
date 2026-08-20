@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilemas Digitais: Problemas e Soluções</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Dilemas Digitais</h1>
+            <p>Os impactos da tecnologia na nossa vida e como retomar o controle.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- SEÇÃO DE DILEMAS -->
+        <section class="grid-dilemas">
+            
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="badge problema">Problema</div>
+                <h2>A Economia da Atenção</h2>
+                <p>Aplicativos são desenhados para viciar, liberando dopamina e roubando seu tempo através de notificações infinitas e feeds sem fim.</p>
+                
+                <div class="badge solucao">Solução</div>
+                <p class="txt-solucao">Desative notificações não-humanas, use aplicativos de limite de tempo e defina o primeiro bloco do seu dia sem telas.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="badge problema">Problema</div>
+                <h2>Privacidade vs. Conveniência</h2>
+                <p>Dados pessoais, localização e históricos de busca são rastreados e vendidos para alimentar algoritmos de anúncios preditivos.</p>
+                
+                <div class="badge solucao">Solução</div>
+                <p class="txt-solucao">Utilize navegadores focados em privacidade (como Brave), buscadores alternativos (DuckDuckGo) e revise as permissões de apps.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="badge problema">Problema</div>
+                <h2>Bolhas e Polarização</h2>
+                <p>Os algoritmos de recomendação mostram apenas conteúdos que você já concorda, criando câmaras de eco e eliminando o debate saudável.</p>
+                
+                <div class="badge solucao">Solução</div>
+                <p class="txt-solucao">Siga ativamente pessoas com visões diferentes da sua, limpe seu histórico de recomendações e consuma canais de notícias diversos.</p>
+            </div>
+
+        </section>
+
+        <!-- SEÇÃO DO QUIZ -->
+        <section class="quiz-section">
+            <h2>Quiz: Qual o seu nível de Dependência Digital?</h2>
+            <form id="quiz-form">
+                
+                <!-- Pergunta 1 -->
+                <div class="question">
+                    <p>1. Qual a primeira coisa que você faz logo após acordar?</p>
+                    <label><input type="radio" name="q1" value="3" required> Olho imediatamente as redes sociais ou e-mails.</label>
+                    <label><input type="radio" name="q1" value="1"> Desligo o alarme e vou fazer minha rotina matinal sem telas.</label>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="question">
+                    <p>2. Quantas vezes você checa o celular enquanto assiste a um filme ou trabalha?</p>
+                    <label><input type="radio" name="q2" value="3" required> Constantemente, toda vez que surge uma pausa ou notificação.</label>
+                    <label><input type="radio" name="q2" value="1"> Raramente, deixo ele longe ou no modo 'Não Perturbe'.</label>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="question">
+                    <p>3. Você já tentou reduzir seu tempo de tela e não conseguiu?</p>
+                    <label><input type="radio" name="q3" value="3" required> Sim, sinto ansiedade ou acabo voltando ao hábito rapidamente.</label>
+                    <label><input type="radio" name="q3" value="1"> Não, consigo passar períodos ou finais de semana desconectado sem problemas.</label>
+                </div>
+
+                <button type="submit" id="btn-enviar">Ver Resultado</button>
+            </form>
+
+            <div id="resultado" class="hidden">
+                <h3>Seu Diagnóstico:</h3>
+                <p id="resultado-texto"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Consciência Digital. Reflita antes de clicar.</p>
+    </footer>
+
+    <script src="scripth.js"></script>
+</body>
+</html>
